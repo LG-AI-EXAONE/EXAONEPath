@@ -2,7 +2,7 @@
 
 ## Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization
 
-[[`Model`](https://release에올리고주소추가예정)] [[`Paper`](https://arxiv.com/fdsaafsdfa)] [[`BibTeX`](#Citation)]
+[[`Model`](https://github.com/st24hour/EXAPath/releases/download/1.0.0/EXAPath.ckpt)] [[`Paper`](https://arxiv.com/fdsaafsdfa)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
@@ -11,7 +11,7 @@
 
 
 ## Model Download
-The EXAPath model checkpoint can be downloaded [here](https://release에올리고주소추가예정)
+The EXAPath model checkpoint can be downloaded [here](https://github.com/st24hour/EXAPath/releases/download/1.0.0/EXAPath.ckpt)
 
 ## Inference
 Load EXAPath and running inference to tile level images.
