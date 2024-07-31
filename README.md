@@ -7,7 +7,7 @@
 
 <!-- ## Updates: -->
 
-## Install
+<!-- ## Install -->
 
 
 ## Model Download
@@ -66,6 +66,7 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
 | GigaPath (patch encoder) | **0.947** | 0.822     | 0.964     | 0.938     | 0.753     | 0.748     | 0.862     |
 | SNPath (ours)            | 0.901     | 0.818     | 0.946     | 0.939     | **0.756** | **0.804** | 0.861     |
 
+<br>
 
 <figure>
     <div style="display: flex; justify-content: center; gap: 10px;">
@@ -76,10 +77,6 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
         <strong>Figure 1. Performance comparison of models based on the number of parameters and the number of WSIs used for training.</strong> The average Top-1 accuracy represents the mean linear evaluation performance across six downstream tasks.
     </figcaption>
 </figure>
-
-
-
-<br>
 
 
 ## Citation
