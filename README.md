@@ -69,8 +69,8 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
 
 <figure>
     <div style="display: flex; justify-content: center; gap: 10px;">
-        <img src="figures/model_comparison_param-1.png" alt="Model Comparison Param" style="width: 55%;">
-        <img src="figures/model_comparison_wsis-1.png" alt="Model Comparison WSIS" style="width: 55%;">
+        <img src="figures/model_comparison_param-1.png" alt="Model Comparison Param" style="width: 49%;">
+        <img src="figures/model_comparison_wsis-1.png" alt="Model Comparison WSIS" style="width: 49%;">
     </div>
     <figcaption style="text-align: left;">
         <strong>Figure 1. Performance comparison of models based on the number of parameters and the number of WSIs used for training.</strong> The average Top-1 accuracy represents the mean linear evaluation performance across six downstream tasks.
