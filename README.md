@@ -7,6 +7,9 @@
 
 <!-- ## Updates: -->
 
+## Install
+
+
 ## Model Download
 The EXAPath model checkpoint can be downloaded [here](https://release에올리고주소추가예정)
 
@@ -64,11 +67,17 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
 | SNPath (ours)            | 0.901     | 0.818     | 0.946     | 0.939     | **0.756** | **0.804** | 0.861     |
 
 
-<div style="display: flex; justify-content: space-around;">
-    <img src="figures/model_comparison_param-1.png" alt="Model Comparison Param" style="width: 45%;">
-    <img src="figures/model_comparison_wsis-1.png" alt="Model Comparison WSIS" style="width: 45%;">
-</div>
-Performance comparison of models based on the number of parameters and the number of WSIs used for training. The average Top-1 accuracy represents the mean linear evaluation performance across six downstream tasks.
+<figure>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+        <img src="figures/model_comparison_param-1.png" alt="Model Comparison Param" style="width: 55%;">
+        <img src="figures/model_comparison_wsis-1.png" alt="Model Comparison WSIS" style="width: 55%;">
+    </div>
+    <figcaption style="text-align: left;">
+        <strong>Figure 1. Performance comparison of models based on the number of parameters and the number of WSIs used for training.</strong> The average Top-1 accuracy represents the mean linear evaluation performance across six downstream tasks.
+    </figcaption>
+</figure>
+
+
 
 <br>
 
