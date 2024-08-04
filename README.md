@@ -87,7 +87,7 @@ If you find EXAPath useful, please cite it using this BibTeX:
     author={Juseung Yun and Yi Hu and Jinhyung Kim and Jongseong Jang and Soonyoung Lee},
     year={2024},
     institution={arXiv},
-    number={2406.05074-수정해야됨},
+    number={2408.00380},
     type={eprint},
     note={To appear}
 }
