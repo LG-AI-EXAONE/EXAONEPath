@@ -2,7 +2,7 @@
 
 ## Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization
 
-[[`Model`](https://github.com/st24hour/EXAPath/releases/download/1.0.0/EXAPath.ckpt)] [[`Paper`](https://arxiv.com/fdsaafsdfa)] [[`BibTeX`](#Citation)]
+[[`Model`](https://github.com/st24hour/EXAPath/releases/download/1.0.0/EXAPath.ckpt)] [[`Paper`](https://arxiv.org/abs/2408.00380)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
