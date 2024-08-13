@@ -1,8 +1,8 @@
-# EXAPath
+# EXAONEPath
 
 ## Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization
 
-[[`Model`](https://github.com/st24hour/EXAPath/releases/download/1.0.0/EXAPath.ckpt)] [[`Paper`](https://arxiv.org/abs/2408.00380)] [[`BibTeX`](#Citation)]
+[[`Model`](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`Paper`](https://arxiv.org/abs/2408.00380)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
@@ -11,10 +11,10 @@
 
 
 ## Model Download
-The EXAPath model checkpoint can be downloaded [here](https://github.com/st24hour/EXAPath/releases/download/1.0.0/EXAPath.ckpt)
+The EXAONEPath model checkpoint can be downloaded [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
 
 ## Inference
-Load EXAPath and running inference to tile level images.
+Load EXAONEPath and running inference to tile level images.
 ```python
 import torch
 from PIL import Image
@@ -22,7 +22,7 @@ from macenko import macenko_normalizer
 import torchvision.transforms as transforms
 from vision_transformer import vit_base
 
-file_path = "./EXAPath.ckpt"
+file_path = "./EXAONEPath.ckpt"
 checkpoint = torch.load(file_path, map_location=torch.device('cpu'))
 state_dict = checkpoint['state_dict']
 model = vit_base(patch_size=16, num_classes=0)
@@ -80,7 +80,7 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
 
 
 ## Citation
-If you find EXAPath useful, please cite it using this BibTeX:
+If you find EXAONEPath useful, please cite it using this BibTeX:
 ```
 @techreport{yun2024enhancing,
     title={Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization},
