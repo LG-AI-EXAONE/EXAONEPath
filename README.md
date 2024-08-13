@@ -8,7 +8,10 @@
 <!-- ## Updates: -->
 
 <!-- ## Install -->
-
+## Introduction
+We introduce EXAONEPath, a patch-level pathology pretrained model with 86 million parameters. 
+The model was pretrained on 285,153,903 patches extracted from a total of 34,795 WSIs. 
+EXAONEPath demonstrates superior performance considering the number of WSIs used and the model's parameter count.
 
 ## Model Download
 The EXAONEPath model checkpoint can be downloaded [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
