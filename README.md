@@ -95,3 +95,6 @@ If you find EXAONEPath useful, please cite it using this BibTeX:
     note={To appear}
 }
 ```
+
+## Contact
+LG AI Research Technical Support: [`contact_us1@lgresearch.ai`](contact_us1@lgresearch.ai)
