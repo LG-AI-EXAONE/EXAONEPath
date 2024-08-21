@@ -134,6 +134,8 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
     </figcaption>
 </figure>
 
+## License
+The model is licensed under [EXAONEPath AI Model License Agreement 1.0 - NC](./LICENSE)
 
 ## Citation
 If you find EXAONEPath useful, please cite it using this BibTeX:
