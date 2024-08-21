@@ -32,7 +32,7 @@ Load EXAONEPath and run inference on tile-level images.
 ```bash
 git clone https://github.com/st24hour/EXAONEPath.git
 cd EXAONEPath
-pip install -r requirements.txt && pip install -e .
+pip install -r requirements.txt
 ```
 
 ### 2. Load the model & Inference
@@ -120,7 +120,7 @@ We report linear evaluation result on six downstream tasks. Top-1 accuracy is sh
 | Virchow                  | 0.933     | **0.834** | 0.968     | -         | -         | -         | -         |
 | RudolfV                  | 0.944     | 0.821     | **0.973** | 0.943     | 0.755     | 0.788     | **0.871** |
 | GigaPath (patch encoder) | **0.947** | 0.822     | 0.964     | 0.938     | 0.753     | 0.748     | 0.862     |
-| SNPath (ours)            | 0.901     | 0.818     | 0.946     | 0.939     | **0.756** | **0.804** | 0.861     |
+| EXAONEPath (ours)        | 0.901     | 0.818     | 0.946     | 0.939     | **0.756** | **0.804** | 0.861     |
 
 <br>
 
@@ -146,8 +146,7 @@ If you find EXAONEPath useful, please cite it using this BibTeX:
     year={2024},
     institution={arXiv},
     number={2408.00380},
-    type={eprint},
-    note={To appear}
+    type={eprint}
 }
 ```
 
