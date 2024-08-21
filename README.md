@@ -2,7 +2,7 @@
 
 ## Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization
 
-[[`Model`](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`Paper`](https://arxiv.org/abs/2408.00380)] [[`BibTeX`](#Citation)]
+[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/st24hour/test_model)] [[`Model`](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
@@ -13,11 +13,47 @@ We introduce EXAONEPath, a patch-level pathology pretrained model with 86 millio
 The model was pretrained on 285,153,903 patches extracted from a total of 34,795 WSIs. 
 EXAONEPath demonstrates superior performance considering the number of WSIs used and the model's parameter count.
 
-## Model Download
-The EXAONEPath model checkpoint can be downloaded [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
 
-## Inference
+
+
+## Quickstart
 Load EXAONEPath and running inference to tile level images.
+
+### Load with HuggingFace
+```python
+import torch
+from PIL import Image
+from macenko import macenko_normalizer
+import torchvision.transforms as transforms
+from vision_transformer import VisionTransformer
+from huggingface_hub import HfApi
+
+hf_token = "YOUR_HUGGINGFACE_TOKEN_HERE"
+model = VisionTransformer.from_pretrained("st24hour/test_model", use_auth_token=hf_token)
+
+transform = transforms.Compose(
+    [
+        transforms.Resize(256, interpolation=transforms.InterpolationMode.BICUBIC),
+        transforms.CenterCrop(224),
+        transforms.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
+    ]
+)
+
+normalizer = macenko_normalizer()
+img_path = "images/MHIST_aaa.png"
+image = Image.open(img_path).convert("RGB")
+image_macenko = normalizer(image)
+
+sample_input = transform(image_macenko).unsqueeze(0)
+model.cuda()
+model.eval()
+
+features = model(sample_input.cuda())
+```
+
+### Load Manually
+Fist, download the EXAONEPath model checkpoint from [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
+
 ```python
 import torch
 from PIL import Image
@@ -25,7 +61,7 @@ from macenko import macenko_normalizer
 import torchvision.transforms as transforms
 from vision_transformer import vit_base
 
-file_path = "./EXAONEPath.ckpt"
+file_path = "MODEL_CHECKPOINT_PATH"
 checkpoint = torch.load(file_path, map_location=torch.device('cpu'))
 state_dict = checkpoint['state_dict']
 model = vit_base(patch_size=16, num_classes=0)
@@ -39,7 +75,6 @@ transform = transforms.Compose(
         transforms.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
     ]
 )
-
 
 normalizer = macenko_normalizer()
 img_path = "images/MHIST_aaa.png"
