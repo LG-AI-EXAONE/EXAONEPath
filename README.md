@@ -1,11 +1,11 @@
----
+<!-- ---
 license: other
 license_name: EXAONEPath
 license_link: LICENSE
 tags:
 - lg-ai
 - EXAONEPath
----
+--- -->
 
 # EXAONEPath
 
