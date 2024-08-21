@@ -11,7 +11,7 @@ tags:
 
 ## EXAONEPath 1.0 Patch-level Foundation Model for Pathology
 
-[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/st24hour/test_model)] [[`Model`](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
+[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/st24hour/test_model)] [[`Model`](https://github.com/LG-AI-EXAONE/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
@@ -30,7 +30,7 @@ Load EXAONEPath and run inference on tile-level images.
 
 ### 1. Install the requirements and the package ###
 ```bash
-git clone https://github.com/st24hour/EXAONEPath.git
+git clone https://github.com/LG-AI-EXAONE/EXAONEPath.git
 cd EXAONEPath
 pip install -r requirements.txt
 ```
@@ -70,7 +70,7 @@ features = model(sample_input.cuda())
 ```
 
 #### Load Manually
-First, download the EXAONEPath model checkpoint from [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
+First, download the EXAONEPath model checkpoint from [here](https://github.com/LG-AI-EXAONE/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
 
 ```python
 import torch
