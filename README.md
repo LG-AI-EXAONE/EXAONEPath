@@ -9,7 +9,7 @@ tags:
 
 # EXAONEPath
 
-## Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization
+## EXAONEPath 1.0 Patch-level Foundation Model for Pathology
 
 [[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/st24hour/test_model)] [[`Model`](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
 
