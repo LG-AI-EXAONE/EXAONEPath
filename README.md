@@ -1,3 +1,12 @@
+---
+license: other
+license_name: EXAONEPath
+license_link: LICENSE
+tags:
+- lg-ai
+- EXAONEPath
+---
+
 # EXAONEPath
 
 ## Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization
@@ -17,18 +26,27 @@ EXAONEPath demonstrates superior performance considering the number of WSIs used
 
 
 ## Quickstart
-Load EXAONEPath and running inference to tile level images.
+Load EXAONEPath and run inference on tile-level images.
 
-### Load with HuggingFace
+### 1. Install the requirements and the package ###
+```bash
+git clone https://github.com/st24hour/EXAONEPath.git
+cd EXAONEPath
+pip install -r requirements.txt && pip install -e .
+```
+
+### 2. Load the model & Inference
+#### Load with HuggingFace
+
+
 ```python
 import torch
 from PIL import Image
 from macenko import macenko_normalizer
 import torchvision.transforms as transforms
 from vision_transformer import VisionTransformer
-from huggingface_hub import HfApi
 
-hf_token = "YOUR_HUGGINGFACE_TOKEN_HERE"
+hf_token = "YOUR_HUGGING_FACE_ACCESS_TOKEN"
 model = VisionTransformer.from_pretrained("st24hour/test_model", use_auth_token=hf_token)
 
 transform = transforms.Compose(
@@ -51,8 +69,8 @@ model.eval()
 features = model(sample_input.cuda())
 ```
 
-### Load Manually
-Fist, download the EXAONEPath model checkpoint from [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
+#### Load Manually
+First, download the EXAONEPath model checkpoint from [here](https://github.com/st24hour/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)
 
 ```python
 import torch
