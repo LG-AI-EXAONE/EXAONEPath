@@ -141,7 +141,7 @@ The model is licensed under [EXAONEPath AI Model License Agreement 1.0 - NC](./L
 If you find EXAONEPath useful, please cite it using this BibTeX:
 ```
 @techreport{yun2024enhancing,
-    title={Enhancing Whole Slide Pathology Foundation Models Through Stain Normalization},
+    title={EXAONEPath 1.0 Patch-level Foundation Model for Pathology},
     author={Juseung Yun and Yi Hu and Jinhyung Kim and Jongseong Jang and Soonyoung Lee},
     year={2024},
     institution={arXiv},
