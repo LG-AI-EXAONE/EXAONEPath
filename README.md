@@ -11,7 +11,7 @@ tags:
 
 ## EXAONEPath 1.0 Patch-level Foundation Model for Pathology
 
-[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/st24hour/test_model)] [[`Model`](https://github.com/LG-AI-EXAONE/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
+[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/LGAI-EXAONE/EXAONEPath)] [[`Model`](https://github.com/LG-AI-EXAONE/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
@@ -47,7 +47,7 @@ import torchvision.transforms as transforms
 from vision_transformer import VisionTransformer
 
 hf_token = "YOUR_HUGGING_FACE_ACCESS_TOKEN"
-model = VisionTransformer.from_pretrained("st24hour/test_model", use_auth_token=hf_token)
+model = VisionTransformer.from_pretrained("LGAI-EXAONE/EXAONEPath", use_auth_token=hf_token)
 
 transform = transforms.Compose(
     [
