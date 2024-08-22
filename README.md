@@ -140,7 +140,7 @@ The model is licensed under [EXAONEPath AI Model License Agreement 1.0 - NC](./L
 ## Citation
 If you find EXAONEPath useful, please cite it using this BibTeX:
 ```
-@techreport{yun2024enhancing,
+@techreport{yun2024exaonepath,
     title={EXAONEPath 1.0 Patch-level Foundation Model for Pathology},
     author={Juseung Yun and Yi Hu and Jinhyung Kim and Jongseong Jang and Soonyoung Lee},
     year={2024},
