@@ -1,0 +1,17 @@
+{
+  "attn_drop_rate": 0.0,
+  "depth": 12,
+  "drop_path_rate": 0.0,
+  "drop_rate": 0.0,
+  "embed_dim": 768,
+  "img_size": [
+    224
+  ],
+  "in_chans": 3,
+  "mlp_ratio": 4,
+  "num_classes": 0,
+  "num_heads": 12,
+  "patch_size": 16,
+  "qk_scale": null,
+  "qkv_bias": true
+}
