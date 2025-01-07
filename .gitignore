@@ -6,3 +6,4 @@ EXAONEPath
 flops_calculate.ipynb
 *backup.md
 *.safetensors
+requirements.txt
