@@ -1,19 +1,17 @@
----
+<!-- ---
 license: other
 license_name: exaonepath
 license_link: LICENSE
 tags:
 - lg-ai
-- EXAONEPath-1.0
-- pathology
-- lg-ai
----
+- EXAONEPath
+--- -->
 
 # EXAONEPath
 
 ## EXAONEPath 1.0 Patch-level Foundation Model for Pathology
 
-[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Github`](https://github.com/LG-AI-EXAONE/EXAONEPath)] [[`Model`](https://github.com/LG-AI-EXAONE/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
+[[`Paper`](https://arxiv.org/abs/2408.00380)] [[`Hugging Face`](https://huggingface.co/LGAI-EXAONE/EXAONEPath)] [[`Model`](https://github.com/LG-AI-EXAONE/EXAONEPath/releases/download/1.0.0/EXAONEPath.ckpt)] [[`BibTeX`](#Citation)]
 
 
 <!-- ## Updates: -->
