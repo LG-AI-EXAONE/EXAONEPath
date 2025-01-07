@@ -29,7 +29,7 @@ EXAONEPath demonstrates superior performance considering the number of WSIs used
 Load EXAONEPath and run inference on tile-level images.
 
 ### 1. Environment Setup ###
-First, install Conda if you haven't already. You can find installation instructions ['here'](https://docs.anaconda.com/miniconda/).
+First, install Conda if you haven't already. You can find installation instructions [here](https://docs.anaconda.com/miniconda/).
 Then create and activate the environment using the provided configuration:
 ```bash
 git clone https://github.com/LG-AI-EXAONE/EXAONEPath.git
