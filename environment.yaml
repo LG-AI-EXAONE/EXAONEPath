@@ -1,4 +1,4 @@
-name: EXAONEPath
+name: exaonepath
 channels:
   - pytorch
   - nvidia
