@@ -28,7 +28,14 @@ EXAONEPath demonstrates superior performance considering the number of WSIs used
 ## Quickstart
 Load EXAONEPath and run inference on tile-level images.
 
-### 1. Environment Setup ###
+### 1. Hardware Requirements ###
+- NVIDIA GPU is required
+- Minimum 8GB GPU memory recommended
+- Compatible NVIDIA drivers installed
+
+Note: This implementation requires NVIDIA GPU and drivers. The provided environment setup specifically uses CUDA-enabled PyTorch, making NVIDIA GPU mandatory for running the model.
+
+### 2. Environment Setup ###
 First, install Conda if you haven't already. You can find installation instructions [here](https://docs.anaconda.com/miniconda/).
 Then create and activate the environment using the provided configuration:
 ```bash
