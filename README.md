@@ -45,7 +45,7 @@ conda env create -f environment.yaml
 conda activate exaonepath
 ```
 
-### 2. Load the model & Inference
+### 3. Load the model & Inference
 #### Load with HuggingFace
 
 
