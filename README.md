@@ -31,7 +31,7 @@ Load EXAONEPath and run inference on tile-level images.
 ### 1. Hardware Requirements ###
 - NVIDIA GPU is required
 - Minimum 8GB GPU memory recommended
-- Compatible NVIDIA drivers installed
+- NVIDIA driver version >= 450.80.02 required
 
 Note: This implementation requires NVIDIA GPU and drivers. The provided environment setup specifically uses CUDA-enabled PyTorch, making NVIDIA GPU mandatory for running the model.
 
